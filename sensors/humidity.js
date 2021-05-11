@@ -4,6 +4,7 @@ export default Object.freeze({
     status: 'keep'
   },
   preprocess(dataLine, ref) {
+    this.data.status = 'keep';
   },
   inprocess(dataLine, ref) {
     const { humidity } = ref;
